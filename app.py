@@ -12,7 +12,7 @@ import pandas as pd
 import  joblib
 import streamlit as st
 
-model=joblib.load('rfr_model (1).pkl')
+model=joblib.load('rfr_model.pkl')
 
 from os import pread
 st.set_page_config(page_title='Wine type classification',layout='centered')

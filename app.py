@@ -42,7 +42,7 @@ if st.button('Predict'):
         sulphates,
         alcohol,
         quality
-    ]], columns=model.feature_names_in_)
+    ]])
 
     # Make prediction
     prediction = model.predict(input_data)[0]

@@ -37,3 +37,18 @@ if st.button('Predict'):
         chlorides,
         free_sulfur_dioxide,
         total_sulfur_dioxide,
+        density,
+        pH,
+        sulphates,
+        alcohol,
+        quality
+    ]], columns=model.feature_names_in_)
+
+    # Make prediction
+    prediction = model.predict(input_data)[0]
+
+    # Display result
+    if prediction == 0:
+        st.error('Red Wine')
+    else:
+        st.success('White Wine')
